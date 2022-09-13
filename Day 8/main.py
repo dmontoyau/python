@@ -23,26 +23,16 @@ def menu():
             print("No ha ingresado una opcion valida, intentelo de nuevo")
 
 
-def decora_funcion(funcion):
-    print("Hola buen dia, su turno es: ")
-    print(next(funcion))
-    print("Aguarde y sera atendido \n")
-
-
 if __name__ == "__main__":
     finalizar_programa = False
     while finalizar_programa == False:
         opcion = menu()
         if opcion == 1:
-            perfume = t.turnos_perfumeria()
-            #decora_funcion(perfume)
-            t.decorador(perfume)
+            t.decorador(opcion)
         elif opcion == 2:
-            farmacia = t.turnos_farmacia()
-            decora_funcion(farmacia)
+            t.decorador(opcion)
         elif opcion == 3:
-            cosmetico = t.turnos_cosmeticos()
-            decora_funcion(cosmetico)
+            t.decorador(opcion)
         elif opcion == 4:
             print("Hasta luego")
             finalizar_programa = True

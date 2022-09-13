@@ -23,7 +23,12 @@ c = turnos_farmacia()
 def decorador(funcion):
     print("\n" + "*" * 23)
     print("Su número es:")
-    print(next(funcion))
+    if funcion == 1:
+        print(next(p))
+    elif funcion == 2:
+        print(next(f))
+    else:
+        print(next(c))
     print("Aguarde y será atendido")
     print("*" * 23 + "\n")
 
